@@ -2,43 +2,43 @@
 
 LobeHub Desktop 是 [LobeChat](https://github.com/lobehub/lobe-chat) 的跨平台桌面应用程序，使用 Electron 构建，提供了更加原生的桌面体验和功能。
 
-## 功能特点
+## Funkcje
 
-- **跨平台支持**：支持 macOS (Intel/Apple Silicon)、Windows 和 Linux 系统
-- **自动更新**：内置更新机制，确保您始终使用最新版本
-- **多语言支持**：完整的国际化支持，包括中文、英文等多种语言
-- **原生集成**：与操作系统深度集成，提供原生菜单、快捷键和通知
-- **安全可靠**：macOS 版本经过公证，确保安全性
-- **多渠道发布**：提供稳定版、测试版和每日构建版本
+- Obsługa wielu platform: Obsługuje systemy macOS (Intel/Apple Silicon), Windows i Linux
+- Aktualizacje automatyczne: Wbudowany mechanizm aktualizacji, dzięki któremu zawsze korzystasz z najnowszej wersji
+- **Obsługa wielu języków**: Pełna obsługa internacjonalizacji, w tym chiński, angielski i inne języki
+- **Natywna integracja**: Głęboka integracja z systemem operacyjnym, zapewniająca natywne menu, skróty i powiadomienia
+- **Bezpieczny**: Wersja dla systemu macOS jest poświadczona notarialnie w celu zapewnienia bezpieczeństwa
+- Wersje wielokanałowe: Dostępne są wersje stabilne, beta i codzienne
 
-## 开发环境设置
+## Ustawienia środowiska programistycznego
 
-### 前提条件
+### Wymagania wstępne
 
 - Node.js 22+
 - pnpm 10+
 
-### 安装依赖
+### Instalowanie zależności
 
 ```bash
 pnpm install-isolated
 ```
 
-### 开发模式运行
+### Uruchamianie w trybie programowania
 
 ```bash
 pnpm electron:dev
 ```
 
-### 构建应用
+### Kompilowanie aplikacji
 
-构建所有平台：
+Zbuduj wszystkie platformy：
 
 ```bash
 pnpm build
 ```
 
-构建特定平台：
+Zbuduj na konkretną platformę：
 
 ```bash
 # macOS
@@ -51,10 +51,10 @@ pnpm build:win
 pnpm build:linux
 ```
 
-## 发布渠道
+## Kanały wydawnicze
 
-应用提供三个发布渠道：
+Aplikacja oferuje trzy kanały dystrybucji:
 
-- **稳定版**：经过充分测试的正式版本
-- **测试版 (Beta)**：预发布版本，包含即将发布的新功能
-- **每日构建版 (Nightly)**：包含最新开发进展的构建版本
+- Stabilny: W pełni przetestowane oficjalne wydanie
+- Beta: wersja przedpremierowa z nowymi funkcjami, które zostaną wkrótce udostępnione
+- Nightly: kompilacja, która zawiera najnowsze postępy w rozwoju
